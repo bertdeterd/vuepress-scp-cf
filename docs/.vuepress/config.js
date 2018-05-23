@@ -1,27 +1,34 @@
 module.exports = {
-  title: 'Learn VuePress',
-  description: "A demo documentation using VuePress",
-  themeConfig:{
-      nav: [
-          { text: 'COUNTER', link: '/counter/' },
-          { text: 'GUIDE', link: '/guide/' },
-      ],
-      sidebar: [
-          {
-            title: 'Counter',
-            collapsable: false,
-            children: [
-              '/init/Page1'
-            ]
-          },
-          {
-            title: 'API Guide',
-            collapsable: false,
-            children: [
-                '/guide/guide',
-                '/guide/api'
-            ]
-          }
+  title: 'Building vue.js apps for SAP Cloud Platform',
+  description: "Scaffold vue.js apps for SCP - Cloud Foundry",
+  themeConfig: {
+    nav: [
+      { text: 'GUIDE', link: '/guide/' }
+    ],
+    sidebar: [
+      {
+        title: 'Prerequisites',
+        collapsable: false,
+        children: [
+          '/prerequisite/start'
         ]
+      },
+      {
+        title: 'Approuter',
+        collapsable: false,
+        children: [
+          '/approuter/start',
+          '/approuter/scpsettings'
+        ]
+      },
+      {
+        title: 'App',
+        collapsable: true,
+        children: [
+          '/guide/guide',
+          '/guide/api'
+        ]
+      }
+    ]
   }
 }
