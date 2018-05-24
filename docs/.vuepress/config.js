@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Building vue.js apps for SAP Cloud Platform',
   description: "Scaffold vue.js apps for SCP - Cloud Foundry",
+  base: '/vuepress-scp-cf/',
   themeConfig: {
     nav: [
       { text: 'GUIDE', link: '/guide/' }
