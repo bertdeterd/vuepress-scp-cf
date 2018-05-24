@@ -25,8 +25,8 @@ module.exports = {
         title: 'App',
         collapsable: true,
         children: [
-          '/guide/guide',
-          '/guide/api'
+          '/approuter/start',
+          '/approuter/scpsettings'
         ]
       }
     ]
