@@ -1,10 +1,13 @@
 module.exports = {
-  title: 'Building vue.js apps for SAP Cloud Platform',
-  description: "Scaffold vue.js apps for SCP - Cloud Foundry",
+  title: 'VueSAP',
+  description: "Fast app development for SCP | Cloud Foundry",
   base: '/vuepress-scp-cf/',
   themeConfig: {
     nav: [
-      { text: 'GUIDE', link: '/guide/' }
+      { text: 'GUIDE', link: '/prerequisite/start.html' },
+      { text: 'SCP', link: 'https://account.hanatrial.ondemand.com/cockpit#/home/trialhome' }
+
+      
     ],
     sidebar: [
       {
