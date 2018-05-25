@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         title: 'Packages',
-        collapsable: true,
+        collapsable: false,
         children: [ 
           '/packages/npm',
           '/packages/vueplugins'
