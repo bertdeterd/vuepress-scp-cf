@@ -9,4 +9,4 @@ meta:
 
 # App
 
-## scp-cf-destination 
+## Find the API endpoint

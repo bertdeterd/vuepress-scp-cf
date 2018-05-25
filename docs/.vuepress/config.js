@@ -5,6 +5,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'GUIDE', link: '/general/intro.html' },
+      { text: 'VUE', link: 'https://vuejs.org/v2/guide/' },
       { text: 'SCP', link: 'https://account.hanatrial.ondemand.com/cockpit#/home/trialhome' }
 
       
