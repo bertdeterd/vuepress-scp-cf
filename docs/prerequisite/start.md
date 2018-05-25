@@ -61,10 +61,13 @@ To let npm be able to find the SAP npm packages (which we will be using), we mus
 ```
 $ npm config set @sap:registry https://npm.sap.com/
 ```
-This creates a ```.npmrc``` file in your root.<br>
-To check out which packages SAP provides, type the follwing in your terminal:
+This creates a `.npmrc` file in your root.<br>
+To check out which packages SAP provides, type the following in your terminal:
 ```
 $ npm search --registry  https://npm.sap.com/ sap
 ```
-For more information read the blog from Sven Kohlhaas: <https://blogs.sap.com/2017/05/16/sap-npm-registry-launched-making-the-lives-of-node.js-developers-easier/>
+
+## More info
+
+* read the blog from Sven Kohlhaas: <https://blogs.sap.com/2017/05/16/sap-npm-registry-launched-making-the-lives-of-node.js-developers-easier/>
 
