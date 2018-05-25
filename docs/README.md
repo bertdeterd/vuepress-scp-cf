@@ -7,8 +7,8 @@ features:
 - title: Zero Config
   details: Get started building apps immediately without spending time on scaffolding
 - title: Vue-Powered
-  details: Enjoy the development experience of Vue 
+  details: Enjoy the development experience of Vue and Vuetify
 - title: Standard
-  details: Set up according to how SAP wants you to set up your Cloud Foundry app 
+  details: Setup according to how SAP wants you to setup your Cloud Foundry app 
 footer: MIT Licensed | Copyright © 2018-present Bert Deterd
 ---
