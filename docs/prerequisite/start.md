@@ -1,23 +1,70 @@
 ---
-title: Intro
-# We can even add meta tags to the page! This sets the keywords meta tag.
-# <meta name="keywords" content="my SEO keywords"/>
+title: Prerequisites
 meta:
   - name: keywords
-  - content: my SEO keywords
+  - content: cf npm node visual studio code sap
 ---
 
-## start
+# Prerequisite 
+
+In order to create and deploy your app, you must have installed the items below.<br>
 
 
-hallo
+## Visual Studio Code 
+
+This is not a requirement. You can choose your own preferred IDE. But if you have not made a choice yet, we recommend to install Visual Studio Code.<br>
+Download and install from: <https://code.visualstudio.com/download>
 
 
-## start1
+## Node JS and NPM
 
-hello
+Download and install from: <https://nodejs.org/en/>
+Check the version in your terminal:
+```javascript
+$ node --version
+```
+```javascript
+$ npm --version
+```
+::: tip
+in Visual Studio Code you can use ```CTRL + "`" ``` to open your terminal
+:::
 
 
-## start2
+## Cloud Foundry CLI
 
-hello
+To deploy your app to SCP-CF you will need the Cloud Foundry CLI. 
+
+Download and install from: <https://github.com/cloudfoundry/cli#downloads><br>
+Check the version in your terminal:
+```javascript
+$ cf --version
+```
+Update with installer from download site <https://github.com/cloudfoundry/cli#downloads>
+
+
+## Vue CLI
+
+To create Vue apps we will need the Vue CLI<br>
+Install with npm:
+```
+$ npm install -g @vue/cli
+```
+
+Check the version in your terminal:
+```
+$ vue --version
+```
+
+## SAP NPM registry
+To let npm be able to find the SAP npm packages (which we will be using), we must register the @sap scoped npm packages
+```
+$ npm config set @sap:registry https://npm.sap.com/
+```
+This creates a ```.npmrc``` file in your root.<br>
+To check out which packages SAP provides, type the follwing in your terminal:
+```
+$ npm search --registry  https://npm.sap.com/ sap
+```
+For more information read the blog from Sven Kohlhaas: <https://blogs.sap.com/2017/05/16/sap-npm-registry-launched-making-the-lives-of-node.js-developers-easier/>
+

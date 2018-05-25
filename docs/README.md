@@ -2,7 +2,7 @@
 home: true
 heroImage: /sap-logo-svg.svg
 actionText: Getting Started →
-actionLink: /approuter/start.html
+actionLink: /general/intro.html
 features:
 - title: Zero Config
   details: Get started building apps immediately without spending time on scaffolding

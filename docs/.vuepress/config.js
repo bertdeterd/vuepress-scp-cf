@@ -4,33 +4,23 @@ module.exports = {
   base: '/vuepress-scp-cf/',
   themeConfig: {
     nav: [
-      { text: 'GUIDE', link: '/prerequisite/start.html' },
+      { text: 'GUIDE', link: '/general/intro.html' },
       { text: 'SCP', link: 'https://account.hanatrial.ondemand.com/cockpit#/home/trialhome' }
 
       
     ],
     sidebar: [
       {
-        title: 'Prerequisites',
+        title: 'Guide',
         collapsable: false,
         children: [
-          '/prerequisite/start'
-        ]
-      },
-      {
-        title: 'Approuter',
-        collapsable: false,
-        children: [
-          '/approuter/start',
-          '/approuter/scpsettings'
-        ]
-      },
-      {
-        title: 'App',
-        collapsable: true,
-        children: [
-          '/approuter/start',
-          '/approuter/scpsettings'
+          '/general/intro',
+          '/prerequisite/start',
+          'cloudconnector/start',
+          '/scpsettings/start',
+          '/sapsettings/start',
+          'approuter/start',
+          'app/start'
         ]
       }
     ]
