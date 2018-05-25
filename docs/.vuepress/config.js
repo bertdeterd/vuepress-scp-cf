@@ -13,7 +13,7 @@ module.exports = {
       {
         title: 'Guide',
         collapsable: false,
-        children: [
+        children: [ 
           '/general/intro',
           '/prerequisite/start',
           'cloudconnector/start',
@@ -21,6 +21,14 @@ module.exports = {
           '/sapsettings/start',
           'approuter/start',
           'app/start'
+        ]
+      },
+      {
+        title: 'Packages',
+        collapsable: true,
+        children: [ 
+          '/packages/npm',
+          '/packages/vueplugins'
         ]
       }
     ]

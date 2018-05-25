@@ -8,7 +8,7 @@ meta:
 # SCP settings 
 
 ## Create destination
-A destination is nothing more than a name for the virtual host you created in the SAP Cloud Connector. In the app we will retrieve the virtual host from the destination name. For this there is an npm package [scp-cf-destination](/app/start.html#scp-cf-destination) which our vue app plugin makes use of<br><br>
+A destination is nothing more than a name for the virtual host you created in the SAP Cloud Connector. In the app we will retrieve the virtual host from the destination name. For this there is an npm package [scp-cf-destination](/packages/npm.html) which our vue app plugin makes use of<br><br>
 Go to your subaccount<br>
 ![destination in SCP](./images/dest-location.png)
 <br><br>
