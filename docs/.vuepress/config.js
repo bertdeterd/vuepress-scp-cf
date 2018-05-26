@@ -2,7 +2,11 @@ module.exports = {
   title: 'VueSAP',
   description: "Fast app development for SCP | Cloud Foundry",
   base: '/vuepress-scp-cf/',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   themeConfig: {
+    lastUpdated: 'Last Updated', // string | boolean
     nav: [
       { text: 'GUIDE', link: '/general/intro.html' },
       { text: 'VUE', link: 'https://vuejs.org/v2/guide/' },
@@ -13,7 +17,7 @@ module.exports = {
     sidebar: [
       {
         title: 'Guide',
-        collapsable: false,
+        collapsable: true,
         children: [ 
           '/general/intro',
           '/prerequisite/start',
@@ -26,7 +30,7 @@ module.exports = {
       },
       {
         title: 'Packages',
-        collapsable: false,
+        collapsable: true,
         children: [ 
           '/packages/npm',
           '/packages/vueplugins'

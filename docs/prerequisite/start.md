@@ -12,22 +12,23 @@ In order to create and deploy your app, you must have installed the items below.
 
 ## Visual Studio Code 
 
-This is not a requirement. You can choose your own preferred IDE. But if you have not made a choice yet, we recommend to install Visual Studio Code.<br>
-Download and install from: <https://code.visualstudio.com/download>
-
+This is not a requirement. You can choose your own preferred IDE. But if you have not made a choice yet, we recommend to install Visual Studio Code.<br><br>
+Download and install from: <https://code.visualstudio.com/download><br>
+<br>
+Install the Vetur extension. Do `CTRL-SHIFT-X` in Visual Studio Code, search for 'Vetur' and click on the install button.
 
 ## Node JS and NPM
 
 Download and install from: <https://nodejs.org/en/>
 Check the version in your terminal:
-```javascript
+```shell
 $ node --version
 ```
-```javascript
+```shell
 $ npm --version
 ```
 ::: tip
-in Visual Studio Code you can use ```CTRL + "`" ``` to open your terminal
+in Visual Studio Code you can use ```CTRL + ` ``` to open your terminal
 :::
 
 
@@ -37,7 +38,7 @@ To deploy your app to SCP-CF you will need the Cloud Foundry CLI.
 
 Download and install from: <https://github.com/cloudfoundry/cli#downloads><br>
 Check the version in your terminal:
-```javascript
+```shell
 $ cf --version
 ```
 Update with installer from download site <https://github.com/cloudfoundry/cli#downloads>
@@ -47,7 +48,7 @@ Update with installer from download site <https://github.com/cloudfoundry/cli#do
 
 To create Vue apps we will need the Vue CLI<br>
 Install with npm:
-```
+```shell
 $ npm install -g @vue/cli
 ```
 
@@ -57,11 +58,11 @@ $ vue --version
 ```
 
 ## SAP NPM registry
-To let npm be able to find the SAP npm packages (which we will be using), we must register the @sap scoped npm packages
+To let npm be able to find the SAP npm packages (which we will be using), we must register the @sap-scoped npm packages
 ```
 $ npm config set @sap:registry https://npm.sap.com/
 ```
-This creates a `.npmrc` file in your root.<br>
+This creates a `.npmrc` file in your root (Windows: `C:\Users\<USER>`).<br><br>
 To check out which packages SAP provides, type the following in your terminal:
 ```
 $ npm search --registry  https://npm.sap.com/ sap
