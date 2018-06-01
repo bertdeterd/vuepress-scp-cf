@@ -48,13 +48,18 @@ Update with installer from download site <https://github.com/cloudfoundry/cli#do
 
 To create Vue apps we will need the Vue CLI<br>
 Install with npm:
-```shell
+```sh
 $ npm install -g @vue/cli
 ```
 
 Check the version in your terminal:
 ```
 $ vue --version
+```
+
+For updating 
+```
+$ npm update @vue/cli -g
 ```
 
 ## SAP NPM registry
