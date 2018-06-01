@@ -25,7 +25,8 @@ module.exports = {
           '/scpsettings/start',
           '/sapsettings/start',
           'approuter/start',
-          'app/start'
+          'app/start',
+          'app/change-app'
         ]
       },
       {
