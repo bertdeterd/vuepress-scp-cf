@@ -11,11 +11,16 @@ meta:
 If you want to test the Cloud Connector you can install it on your laptop.<br>
 * Go to <https://tools.hana.ondemand.com/#cloud> and install the Cloud Connector windows or windows (portable).<br>
 * Go to your folder where you installed CC and start go.bat. Your CC is now running on https://localhost:8443<br>
-![create 0](./images/cc_start_running.png)
-* Start the initial setup. Initial credentials > user : Administrator and password : manage. The installation type is Master
+![create 0](./images/cc_start_running.png) <br><br>
+Some considerations:<br>
+* Start the initial setup. Initial credentials > user : Administrator and password : manage. 
+* The installation type is Master
+* Your region starts with cf. For EU it is cf.eu10.hana.ondemand.com. 
+* Your subaccount is the subaccount ID (see your SCP: subaccount details, field ID)
+
 
 ## Configuration
-Go to `Cloud to On-premise` and create a virtual host which maps to your SAP backend system. Click on the + button<br>
+Go to `Cloud To On-Premise` and create a virtual host which maps to your SAP backend system. Click on the + button<br>
 ![create 1](./images/cc_create_vh.png)
 
 ## More info 

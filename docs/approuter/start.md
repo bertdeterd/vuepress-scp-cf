@@ -12,7 +12,7 @@ The application router is the single entry point for the (business) application.
 
 ## Create the approuter
 
-The first step is to create our basic approuter. Below my-approuter is created but you can give it any name.
+The first step is to create our basic approuter. Below my-approuter is created but you can give it any name. Since it is not a real app there is no need to make special settings for vue so we can use the `--default`.
 ```
 $ vue create my-approuter --default
 ```
@@ -42,7 +42,7 @@ One example is already given in xs-app.json<br>
 
 ## Adjust destination configuration
 
-Make a mapping between the destination name and the actual url for the app in manifest.yml. If you have not made an app yet, deploy and alter this file later.
+Make a mapping between the destination name in `xs-app.json` and the actual target-url for the app in `manifest.yml`. If you have not made an app yet, deploy and change the configuration later.<br>
 ``` json
     destinations: >
       [
@@ -53,7 +53,7 @@ Make a mapping between the destination name and the actual url for the app in ma
         }
       ]
 ```
-you can also change the destination config in SCP. Go to the user provided variables in the approuter app.
+You can also change the destination configuration in SCP directly. Go to the user-provided variables for your approuter app and change the variable.<br>
 
 ![create 0](./images/approuter-env.png)
 
