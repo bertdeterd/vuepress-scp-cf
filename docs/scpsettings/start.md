@@ -46,6 +46,6 @@ $ cf marketplace -s connectivity
 ![smp conn](./images/cf-marketplace-conn.png)<br>
 And then create the service instance with the plan available
 ``` js
-$ cf create-service connectivity lite my-connecor
+$ cf create-service connectivity lite my-connector
 ```
 
