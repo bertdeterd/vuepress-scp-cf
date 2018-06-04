@@ -12,7 +12,7 @@ meta:
 ## Use backend service 
 
 In your vue file add
-``` js{8..14}
+``` js{8}
 <script>
 export default {
   name: "HelloWorld",
