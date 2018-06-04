@@ -42,7 +42,7 @@ One example is already given in xs-app.json<br>
 
 ## Adjust destination configuration
 
-Make a mapping between the destination name and the actual url for the app. If you have not made an app yet, deploy and alter this file later.
+Make a mapping between the destination name and the actual url for the app in manifest.yml. If you have not made an app yet, deploy and alter this file later.
 ``` json
     destinations: >
       [
@@ -53,6 +53,12 @@ Make a mapping between the destination name and the actual url for the app. If y
         }
       ]
 ```
+you can also change the destination config in SCP. Go to the user provided variables in the approuter app.
+
+![create 0](./images/approuter-env.png)
+
+
+
 
 
 
