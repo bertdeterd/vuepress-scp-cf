@@ -6,10 +6,10 @@ meta:
 ---
 
 # SAP settings 
-On the SAP backend, some settings must be checked if you want Principal Propagation to work. The transactions are: RZ10, STRUST, CERTRULE, SICF and SMICM.
+On the on-premise SAP backend, some settings must be checked if you want Principal Propagation to work. The transactions are: RZ10, STRUST, CERTRULE, SICF and SMICM.
 
 ## Set ping service 
-The ping service is always provided in the app. Go to `SICF` transaction and activate **/sap/bc/ping** service. <br>
+The ping service is always provided in the app. Go to `SICF` transaction and activate the **/sap/bc/ping** service. <br>
 ::: tip
 If you do not want to setup principal propagation, enter a service user for this service and skip the rest of this chapter.
 :::
@@ -41,14 +41,14 @@ In transaction `STRUST`, the **issuer** of the System Certificate needs to be ad
 Go to your Cloud Connector : Connector > Configuration, tab ON PREMISE, subtab PRINCIPAL PROPAGATION and click on the button `create a sample certificate`. Enter your SAP login emailaddress as CN attribute and download the certificate. Upload the created sample certificate in CERTRULE. Connect the CN with a SAP User ID.
 
 ## SMICM
-Restart ICM after changes in RZ10
+Restart ICM after changes in RZ10. <br>
 Use ICM trace for troubleshooting.
 
 ## Create SAP Gateway Service
 Beyond this scope. Ask your SAP developer.
 
 ## More info
-* https://blogs.sap.com/2017/06/22/how-to-guide-principal-propagation-in-an-https-scenario/
-* https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/a8bb87a72d094e0d981d2b1f67df7bc3.html
+* [how-to-guide-principal-propagation-in-an-https-scenario](https://blogs.sap.com/2017/06/22/how-to-guide-principal-propagation-in-an-https-scenario/)
+* [SAP help](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/a8bb87a72d094e0d981d2b1f67df7bc3.html)
 
 
