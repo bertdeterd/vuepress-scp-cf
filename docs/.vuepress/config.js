@@ -26,7 +26,8 @@ module.exports = {
           '/sapsettings/start',
           'approuter/start',
           'app/start',
-          'app/changeapp'
+          'app/service-gateway',
+          'app/service-rules'
         ]
       },
       {
