@@ -6,6 +6,7 @@ meta:
 ---
 
 # Cloud Connector
+The Cloud Connector is a small server installed inside the customer’s landscape and acts as a reverse proxy to establish a connection with the connectivity service on SAP Cloud Platform. Once the connection is established, the Cloud Connector accepts calls from SAP Cloud Platform and routes them through to the correct endpoint of one of the on-premise systems.
 
 ## Installation 
 If you want to test the Cloud Connector you can install it on your laptop.<br>
@@ -13,7 +14,7 @@ If you want to test the Cloud Connector you can install it on your laptop.<br>
 * Go to your folder where you installed the CC and start go.bat. Your CC is now running on https://localhost:8443<br>
 ![create 0](./images/cc_start_running.png) <br><br>
 Some considerations:<br>
-* Start the initial setup. Initial credentials > `user : Administrator and password : manage`. 
+* Start the initial setup. Initial credentials > **user:** `Administrator` and **password:** `manage`. 
 * The installation type is `Master`
 * Your region starts with cf. For EU it is cf.eu10.hana.ondemand.com. 
 * Your subaccount is the subaccount ID (see your SCP: subaccount details, field ID)
