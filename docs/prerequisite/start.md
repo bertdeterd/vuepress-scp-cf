@@ -15,7 +15,8 @@ In order to create and deploy your app, you must have installed the items below.
 This is not a requirement. You can choose your own preferred IDE. But if you have not made a choice yet, we recommend to install Visual Studio Code.<br><br>
 Download and install from: <https://code.visualstudio.com/download><br>
 <br>
-Install the Vetur extension. Do `CTRL-SHIFT-X` in Visual Studio Code, search for 'Vetur' and click on the install button.
+Install the **Vetur** extension. Do `CTRL-SHIFT-X` in Visual Studio Code, search for 'vetur' and click on the install button.
+If you use Vuetify also install the extension **vuetify-vscode**.
 
 ## Node JS and NPM
 

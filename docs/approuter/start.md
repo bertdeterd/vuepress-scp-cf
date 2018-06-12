@@ -57,13 +57,20 @@ You can also change the destination configuration in SCP directly. Go to the use
 
 ![create 0](./images/approuter-env.png)
 
-
-
-
-
-
 ## Deploy
 Run:
 ```
 $ npm run build && cf push
+```
+
+
+## Local development
+If you want to test locally and do not want to deploy your approuter every time you can set `default-services.json` and run npm start.
+
+Copy the data from your xsuaa instance in default-services.json after "uaa".
+
+Change the uaadomain to include your specific domain:
+
+```
+"uaadomain": "s000000000trial.authentication.eu10.hana.ondemand.com",
 ```

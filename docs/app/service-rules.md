@@ -9,32 +9,27 @@ meta:
 
 # App
 
-## Use backend service 
+## Create service instance  
 
-In your vue file add
-``` js{8}
-<script>
-export default {
-  name: "HelloWorld",
-  props: {
-    msg: String
-  },
-  async created() {
-    try {
-      const response = await this.$http.get(`/sap/basic/ping`); 
-      this.msg = response.data;
-    } catch (e) {
-      console.log(e);
-    }
-  }
-};
-</script>
-```
+Go to the service marketplace in your space.
+[](images/rules-1.png)
 
+Go to instances and  create a new service instance 
+[](images/rules-2.png)
+[](images/rules-3.png)
 
-## Add backend service 
+## Bind service to your app 
 
-To add a backend server, go to server/routes/sap and add a js file. If you want to subdivide your services add a folder.
-One service is created: /sap/basic/ping. 
+## Create rule
+
+## Connect app
+
+vue add scp-cf-rules
+
+## Alter app to make use of rule
+
+## More info
+* [](https://blogs.sap.com/2018/03/29/quick-start-guide-to-sap-business-rules-service-in-cloud-foundry/)
+
 
 

@@ -40,7 +40,14 @@ This is the connectivity instance you made in the prerequisite
 This is the destination configuration name you made in the prerequisite
 
 ## Deploy
-Run:
+
+If you have not logged in to your cloud foundry SCP environment, run:
+```
+$ cf api https://api.cf.eu10.hana.ondemand.com
+$ cf login
+```
+
+Once you have logged in, deploy by running:
 ```
 $ npm run build && cf push
 ```
