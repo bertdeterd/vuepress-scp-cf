@@ -9,6 +9,7 @@ meta:
 
 The application router is the single entry point for the (business) application. It has the responsibility to serve static content, authenticate users, rewrite URLs, and proxy requests to other micro services while propagating user information.
 
+![create 01](./images/result.png)
 
 ## Create the approuter
 

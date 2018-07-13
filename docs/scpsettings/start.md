@@ -7,6 +7,9 @@ meta:
 
 # SCP settings 
 
+## Create a trial account 
+Go to <https://cloudplatform.sap.com/index.html> and click on Free Trial to get an account on the SAP Cloud Platform.
+
 ## Create destination configuration
 A destination is nothing more than a name for the virtual host you created in the SAP Cloud Connector. In the app we will retrieve the virtual host from the destination name. For this there is an npm package [scp-cf-destination](/packages/npm.html) which our vue app plugin will make use of<br><br>
 Go to your subaccount<br>
