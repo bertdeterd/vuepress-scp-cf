@@ -12,6 +12,70 @@ The most important driver for fast app development are - besides vue itself ofco
 
 ## vue-plugin-scp-cf-approuter
 
+A package to create an approuter in a few steps/commands from a basic vue.js application for the Cloud Foundry SAP Cloud Platform (SCP). The approuter is the central point of entry to your business applications.
+<br>
+
+### Prerequisite
+
+You have installed vue-cli. 
+```
+$ npm install -g @vue/cli
+```
+
+Furthermore it is assumed you have created a xsuaa instance in SCP as described [here](https://bertdeterd.github.io/vuepress-scp-cf/scpsettings/start.html#create-uaa-service-instance).<br>
+
+### Steps
+
+1. Create a basic vue.js application<br>
+```
+$ vue create my-approuter --default
+```
+<br>
+
+2. Add the approuter plugin<br>
+```
+$ vue add scp-cf-approuter
+```
+<br>
+
+3. Deploy to Cloud Foundry<br>
+```
+$ npm run build && cf push
+```
+<br>
+
+
+You have created a vue.js application with additional SCP-CF approuter settings and files:
+- manifest.yml<br>
+deployment manifest for cloud foundry
+- xs-app.json<br>
+configures the application router and describes the routes
+- start script in package.json<br>
+let CF know to start the approuter from SAP (@sap/approuter)
+- a .cfignore<br>
+to avoid node_modules folder being uploaded to CF
+- a .npmrc<br>
+for registering @sap npm registry within CF 
+- vue.config.js  <br>
+we need 'resources' as our build folder and not 'dist'.
+- connection to CF userinfo service <br>
+with this we can show the user you are logged in
+- logout feature<br>
+a button to logout to a logout page
+<br>
+To let the approuter be able to forward you to your webapplication, you will need to adjust manifest.yml (destinations) and xs-app.json manually ofcourse.<br>
+
+For deploying to CF just call:
+```
+$ npm run build
+```
+```
+$ cf push
+```
+
+
+
+
 
 ## vue-plugin-scp-cf-app
 
