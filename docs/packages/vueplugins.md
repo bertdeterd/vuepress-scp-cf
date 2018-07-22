@@ -63,6 +63,7 @@ with this we can show the user you are logged in
 - logout feature<br>
 a button to logout to a logout page
 <br><br>
+
 To let the approuter be able to forward you to your webapplication, you will need to adjust manifest.yml (destinations) and xs-app.json manually ofcourse.<br>
 
 After your changes re-deploy to CF:<br>
