@@ -2,6 +2,7 @@ module.exports = {
   title: 'VueSAP',
   description: "Fast app development for SCP | Cloud Foundry",
   base: '/vuepress-scp-cf/',
+  ga: "UA-122723521-1",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
