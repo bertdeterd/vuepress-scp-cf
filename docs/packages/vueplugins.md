@@ -62,17 +62,13 @@ we need 'resources' as our build folder and not 'dist'.
 with this we can show the user you are logged in
 - logout feature<br>
 a button to logout to a logout page
-<br>
+<br><br>
 To let the approuter be able to forward you to your webapplication, you will need to adjust manifest.yml (destinations) and xs-app.json manually ofcourse.<br>
 
-For deploying to CF just call:
+After your changes re-deploy to CF:<br>
 ```
-$ npm run build
+$ npm run build && cf push
 ```
-```
-$ cf push
-```
-
 
 
 
