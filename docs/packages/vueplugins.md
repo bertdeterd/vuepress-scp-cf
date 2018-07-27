@@ -12,7 +12,9 @@ The most important driver for fast app development are - besides vue itself ofco
 
 ## vue-plugin-scp-cf-approuter
 
-A package to create an approuter in a few steps/commands from a basic vue.js application for the Cloud Foundry SAP Cloud Platform (SCP). The approuter is the central point of entry to your business applications.
+A package to create an approuter in a few steps/commands from a basic vue.js application for the Cloud Foundry SAP Cloud Platform (SCP). The approuter is the central point of entry to your business applications.<br>
+For more info, check [here](https://bertdeterd.github.io/vuepress-scp-cf/approuter/start.html)
+
 <br>
 
 ### Prerequisite
