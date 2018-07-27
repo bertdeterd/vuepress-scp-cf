@@ -43,7 +43,11 @@ One example is already given in xs-app.json<br>
 
 ## Adjust destination configuration
 
-Make a mapping between the destination name in `xs-app.json` and the actual target-url for the app in `manifest.yml`. If you have not made an app yet, deploy and change the configuration later.<br>
+Make a mapping between the destination name in `xs-app.json` and the actual target-url for the app. Go to your subaccount `Connectivity > Destinations`. If you have not made an app yet, deploy and change the configuration later.<br>
+
+![create 0](./images/dest-settings.png)
+
+As an alternative (not recommended), you can set the destinations in `manifest.yml`.<br>
 ``` json
     destinations: >
       [
