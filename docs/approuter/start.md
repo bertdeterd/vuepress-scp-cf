@@ -45,6 +45,8 @@ One example is already given in xs-app.json<br>
 
 Make a mapping between the destination name in `xs-app.json` and the actual target-url for the app. Go to your subaccount `Connectivity > Destinations`. If you have not made an app yet, deploy and change the configuration later.<br>
 
+![create 0](./images/appjson-routes.png)
+
 ![create 0](./images/dest-settings.png)
 
 As an alternative (not recommended), you can set the destinations in `manifest.yml`.<br>
@@ -58,9 +60,6 @@ As an alternative (not recommended), you can set the destinations in `manifest.y
         }
       ]
 ```
-You can also change the destination configuration in SCP directly. Go to the user-provided variables for your approuter app and change the variable.<br>
-
-![create 0](./images/approuter-env.png)
 
 ## Deploy
 Run:

@@ -7,7 +7,7 @@
     <meta name="description" content="Fast app development for SCP | Cloud Foundry">
     <link rel="icon" href="/vuepress-scp-cf/favicon.ico">
     <meta name="keywords"><meta content="approuter">
-    <link rel="preload" href="/vuepress-scp-cf/assets/css/13.styles.db76f926.css" as="style"><link rel="preload" href="/vuepress-scp-cf/assets/js/app.abc8f5ff.js" as="script"><link rel="preload" href="/vuepress-scp-cf/assets/js/9.37c2846f.js" as="script"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/2.e77ef389.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/0.16aec26d.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/1.9d07ab96.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/3.82c11ba1.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/4.c6ecb57a.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/5.8ce7a452.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/6.57e9591d.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/7.1d23bc05.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/8.f3b9e114.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/10.680e226e.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/11.8e62f9ea.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/12.711af3da.js">
+    <link rel="preload" href="/vuepress-scp-cf/assets/css/13.styles.db76f926.css" as="style"><link rel="preload" href="/vuepress-scp-cf/assets/js/app.ccb2b03f.js" as="script"><link rel="preload" href="/vuepress-scp-cf/assets/js/9.afcd3280.js" as="script"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/1.9d07ab96.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/0.16aec26d.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/2.e77ef389.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/3.82c11ba1.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/4.17658357.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/5.8ce7a452.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/6.57e9591d.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/7.1d23bc05.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/8.f3b9e114.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/10.6b73197b.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/11.8e62f9ea.js"><link rel="prefetch" href="/vuepress-scp-cf/assets/js/12.711af3da.js">
     <link rel="stylesheet" href="/vuepress-scp-cf/assets/css/13.styles.db76f926.css">
   </head>
   <body>
@@ -33,7 +33,7 @@ One example is already given in xs-app.json<br></p><div class="language-json ext
       <span class="token punctuation">}</span>
   <span class="token punctuation">]</span>
 <span class="token punctuation">}</span>
-</code></pre></div><h2 id="adjust-destination-configuration"><a href="#adjust-destination-configuration" aria-hidden="true" class="header-anchor">#</a> Adjust destination configuration</h2><p>Make a mapping between the destination name in <code>xs-app.json</code> and the actual target-url for the app in <code>manifest.yml</code>. If you have not made an app yet, deploy and change the configuration later.<br></p><div class="language-json extra-class"><pre class="language-json"><code>    destinations<span class="token operator">:</span> &gt;
+</code></pre></div><h2 id="adjust-destination-configuration"><a href="#adjust-destination-configuration" aria-hidden="true" class="header-anchor">#</a> Adjust destination configuration</h2><p>Make a mapping between the destination name in <code>xs-app.json</code> and the actual target-url for the app. Go to your subaccount <code>Connectivity &gt; Destinations</code>. If you have not made an app yet, deploy and change the configuration later.<br></p><p><img src="/vuepress-scp-cf/assets/img/dest-settings.75842d7d.png" alt="create 0"></p><p>As an alternative (not recommended), you can set the destinations in <code>manifest.yml</code>.<br></p><div class="language-json extra-class"><pre class="language-json"><code>    destinations<span class="token operator">:</span> &gt;
       <span class="token punctuation">[</span>
         <span class="token punctuation">{</span>
           <span class="token property">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;myapp&quot;</span><span class="token punctuation">,</span>                                             
@@ -43,13 +43,13 @@ One example is already given in xs-app.json<br></p><div class="language-json ext
       <span class="token punctuation">]</span>
 </code></pre></div><p>You can also change the destination configuration in SCP directly. Go to the user-provided variables for your approuter app and change the variable.<br></p><p><img src="/vuepress-scp-cf/assets/img/approuter-env.418bb15b.png" alt="create 0"></p><h2 id="deploy"><a href="#deploy" aria-hidden="true" class="header-anchor">#</a> Deploy</h2><p>Run:</p><div class="language- extra-class"><pre class="language-text"><code>$ npm run build &amp;&amp; cf push
 </code></pre></div><h2 id="local-development"><a href="#local-development" aria-hidden="true" class="header-anchor">#</a> Local development</h2><p>If you want to test locally and do not want to deploy your approuter every time you can set <code>default-services.json</code> and run npm start.</p><p>Copy the data from your xsuaa instance in default-services.json after &quot;uaa&quot;.</p><p>Change the uaadomain to include your specific domain:</p><div class="language- extra-class"><pre class="language-text"><code>&quot;uaadomain&quot;: &quot;s000000000trial.authentication.eu10.hana.ondemand.com&quot;,
-</code></pre></div></div><div class="content edit-link"><!----><div class="last-updated"><span class="prefix">Last Updated: </span><span class="time">7/13/2018, 2:29:57 PM</span></div></div><div class="content page-nav"><p class="inner"><span class="prev">
+</code></pre></div></div><div class="content edit-link"><!----><div class="last-updated"><span class="prefix">Last Updated: </span><span class="time">7/27/2018, 10:45:26 AM</span></div></div><div class="content page-nav"><p class="inner"><span class="prev">
         ← <a href="/vuepress-scp-cf/sapsettings/start.html" class="prev">
           SAP settings
         </a></span><span class="next"><a href="/vuepress-scp-cf/app/start.html">
           App
         </a> →
       </span></p></div></div></div></div>
-    <script src="/vuepress-scp-cf/assets/js/9.37c2846f.js" defer></script><script src="/vuepress-scp-cf/assets/js/app.abc8f5ff.js" defer></script>
+    <script src="/vuepress-scp-cf/assets/js/9.afcd3280.js" defer></script><script src="/vuepress-scp-cf/assets/js/app.ccb2b03f.js" defer></script>
   </body>
 </html>
