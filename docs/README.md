@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /sap-logo-svg.svg
-bg: red
+pageClass: custom-homepage-class
 actionText: Getting Started →
 actionLink: /general/intro.html
 features:
